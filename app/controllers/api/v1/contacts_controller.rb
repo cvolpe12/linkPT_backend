@@ -32,12 +32,11 @@ class Api::V1::ContactsController < ApplicationController
   private
 
   def contact_params
-    params.permit(:name, :age, :species, :breed, :hobbies, :plays_well, :picture, :bio)
+    params.permit(:first_name, :last_name, :phone, :email, :photo)
   end
 
   def find_contact
     @contact = Contact.find(params[:id])
   end
-end
 
 end
