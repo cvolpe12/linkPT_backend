@@ -15,4 +15,12 @@ chris = Contact.create(
   photo: nil
 )
 
+christina = Contact.create(
+  first_name: "Christina",
+  last_name: "Sopova",
+  phone: "5555555555",
+  email: "christina.sopova@linkpt.app",
+  photo: nil
+)
+
 puts "end seed"
